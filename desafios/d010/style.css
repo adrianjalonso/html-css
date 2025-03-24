@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'bug';
+    src: url(fontes/idroid.otf);
+}
+body {
+    background-color: rgb(23, 138, 31);
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+header > p {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p { 
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+}
+.link::after {
+    content: '🔗'; 
+}
+strong {
+    color: green;
+}
+main {
+    padding: 10px 50px;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+    box-shadow: 5px 5px 5px rgb(16, 96, 21);
+    text-align: auto;
+    justify-content: auto;
+    text-align: justify;
+}
+div > p > strong > a {
+    text-decoration: none;
+    color: green;
+}
+p > a {
+    background-color: rgba(2, 174, 2, 0.263);
+    text-decoration: none;
+    color: rgb(0, 87, 0);
+}
+header {
+    background-image: linear-gradient(to bottom,rgb(131, 212, 131),rgb(1, 86, 1));
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: auto;
+   
+}
+nav > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 3px;
+    padding: 10px;
+}
+nav > a:hover {
+    background-color: rgba(245, 245, 245, 0.525);
+    border-radius: 5px;  
+}
+h3,h2 {
+    color: green;
+    font-family: 'bug',sans-serif;
+}
+h3 {
+    font-family: 'bug',sans-serif;
+    background-image: linear-gradient(to right,rgb(120, 213, 120), white);
+}
+picture img {
+    display: block;
+    margin: 0px auto;
+}
+img {
+    display: flex;
+    margin: auto;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    background-color: green;
+    padding: 10px;
+    width: 80%;
+    aspect-ratio: 16/9;
+}
+div {
+    text-align: auto;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgb(0, 53, 0);
+    padding: 0px;
+    background-color: rgb(161, 196, 161);
+}
+div > h1 {
+    background-color: green;
+    margin: 10px auto;
+    padding: 10px ;
+    text-align: left;
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+div > p {
+    padding: 20px;
+}
+footer > strong {
+    color: white;
+}
+footer {
+    color: white;
+    text-align: center; 
+}
+section {
+    margin: auto;
+    display: flex;
+}
+.columna {
+    list-style: none;
+    margin: auto;
+}
+.columna li::before {
+    content: "✔";
+
+}
