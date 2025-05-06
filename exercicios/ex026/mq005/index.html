@@ -6,8 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer"  class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -29,6 +30,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maiores repudiandae, quia recusandae nam eum corporis ipsum at dolore inventore blanditiis accusamus odio illo cupiditate impedit consequatur aliquid obcaecati sunt?</p>
         </article>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerwidth = 768) {
+                items.style.display = 'block'
+            } else {
+                items.style.display = 'none'
+            }
+        }
+    </script>
     <script>
         function clickMenu() {
             if (items.style.display == 'block') {
