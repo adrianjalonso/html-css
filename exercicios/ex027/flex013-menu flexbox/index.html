@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu flexbox</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 764px)">
 </head>
-<body>
-    <header id="container1">
+<body onresize="mudouTamanho()">
+    <header>
         <h1>Meu site</h1>
-        <nav>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <nav id="items">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -24,5 +26,23 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi earum tempore atque facere harum. Sed accusamus laboriosam similique sunt eaque reiciendis consequuntur repellat, ipsum aspernatur mollitia molestias quia iste repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate possimus, fugiat perspiciatis nostrum modi reprehenderit autem dignissimos eius quia nobis, molestias quidem ratione laboriosam sit vero eligendi. Placeat, reiciendis?</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, velit facere maiores, consectetur ex rem praesentium dicta officia eius natus tenetur! Fugiat, aliquam illum quis omnis repellat officia pariatur asperiores?</p>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerwidth = 768) {
+                items.style.display = 'block'
+            } else {
+                items.style.display = 'none'
+            }
+        }
+    </script>
+    <script>
+        function clickMenu() {
+            if (items.style.display == 'block') {
+                items.style.display = 'none'
+            } else {
+                items.style.display = 'block'
+            }
+                }
+    </script>
 </body>
 </html>

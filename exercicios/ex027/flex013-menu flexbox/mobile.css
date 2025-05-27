@@ -11,3 +11,7 @@ header > h1  {
 header > nav {
     width: 90vw;
 }
+
+i#burguer {
+    display: block;
+}
